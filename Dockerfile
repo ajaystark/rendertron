@@ -32,9 +32,7 @@ RUN npm i puppeteer \
     && chown -R pptruser:pptruser /home/pptruser \
     && chown -R pptruser:pptruser /node_modules
 
-# Run everything after as non-privileged user.
-USER pptruser
 
-CMD ["google-chrome-unstable"]
+CMD npm run start
 
 EXPOSE 80
