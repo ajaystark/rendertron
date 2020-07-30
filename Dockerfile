@@ -37,4 +37,4 @@ USER pptruser
 
 CMD ["google-chrome-unstable"]
 
-EXPOSE 8090
+EXPOSE 80
